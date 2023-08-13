@@ -887,6 +887,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5686134208185136530}
   - component: {fileID: 5686134208192617028}
+  - component: {fileID: 1964602101}
+  - component: {fileID: 619691745}
   m_Layer: 0
   m_Name: Right Hand Model
   m_TagString: Untagged
@@ -931,6 +933,77 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1964602101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686134208185362930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa3de6dcedb472540a7d0cdf2d183bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pinchAnimationAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Pinch Animation
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: dd6a0489-1763-4d7a-9f0a-d49330ee7302
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  _gripAnimationAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Grip Animation
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 9db2544b-4c6b-484f-8b51-d468e1815296
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  _handAnimator: {fileID: 5686134208192617028}
+--- !u!114 &619691745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686134208185362930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f19796bc38fef047a6797babcea7f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _handModelType: 1
+  _root: {fileID: 5686134208185136530}
+  _animator: {fileID: 5686134208192617028}
+  _fingerBones:
+  - {fileID: 5686134208185136546}
+  - {fileID: 5686134208185136556}
+  - {fileID: 5686134208185136558}
+  - {fileID: 5686134208185136554}
+  - {fileID: 5686134208185136564}
+  - {fileID: 5686134208185136566}
+  - {fileID: 5686134208185136562}
+  - {fileID: 5686134208185136572}
+  - {fileID: 5686134208185136574}
+  - {fileID: 5686134208185136568}
+  - {fileID: 5686134208185136516}
+  - {fileID: 5686134208185136518}
+  - {fileID: 5686134208185136512}
+  - {fileID: 5686134208185136524}
+  - {fileID: 5686134208185136526}
+  - {fileID: 5686134208185136520}
 --- !u!1 &5686134208185362932
 GameObject:
   m_ObjectHideFlags: 0
